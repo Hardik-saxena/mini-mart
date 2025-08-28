@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniMart – Cart</title>
+  <link rel="stylesheet" href="webstyle.css"/>
+</head>
+<body>
+  <nav class="mm-navbar">
+    <a href="web.html" class="brand">🛍️ MiniMart</a>
+    <div class="spacer"></div>
+    <a href="order.html">📦 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist (<span id="wishlistCount">0</span>)</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    <span id="userSection"></span>
+  </nav>
+
+  <main class="mm-container">
+    <h1>Your Cart</h1>
+    <div id="cartItems" class="grid"></div>
+
+    <div class="cart-summary">
+      <h2 id="totalPrice"></h2>
+      <div class="checkout-section">
+        <button onclick="goToCheckout()" class="mm-btn primary">🧾 Proceed to Checkout</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="Web.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniMart – Home</title>
+  <link rel="stylesheet" href="webstyle.css" />
+</head>
+<body>
+  <nav class="mm-navbar">
+    <a href="web.html" class="brand">🛍️ MiniMart</a>
+    <div class="spacer"></div>
+    <a href="order.html">📦 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist (<span id="wishlistCount">0</span>)</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    <span id="userSection"></span>
+  </nav>
+
+  <header class="mm-hero">
+    <h1>Fresh deals, daily ✨</h1>
+    <p>Browse products and build your cart.</p>
+  </header>
+
+  <main class="mm-container">
+    <div class="toolbar">
+      <input id="searchBox" placeholder="Search products..." />
+      <select id="sortSelect">
+        <option value="default">Sort by</option>
+        <option value="priceAsc">Price: Low → High</option>
+        <option value="priceDesc">Price: High → Low</option>
+        <option value="nameAsc">Name: A → Z</option>
+      </select>
+    </div>
+
+    <div id="products" class="grid"></div>
+    <div id="productsError" class="error"></div>
+  </main>
+
+  <script src="Web.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

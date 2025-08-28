@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniMart – Checkout</title>
+  <link rel="stylesheet" href="webstyle.css"/>
+</head>
+<body>
+  <nav class="mm-navbar">
+    <a href="web.html" class="brand">🛍️ MiniMart</a>
+    <div class="spacer"></div>
+    <a href="order.html">📦 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist (<span id="wishlistCount">0</span>)</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    <span id="userSection"></span>
+  </nav>
+
+  <main class="mm-container">
+    <h1>Checkout</h1>
+    <div id="checkoutSummary" class="mm-card"></div>
+
+    <form id="checkoutForm" class="mm-form">
+      <label>Full Name</label>
+      <input id="fullName" required/>
+      <label>Address</label>
+      <textarea id="address" required></textarea>
+      <label>Payment Method</label>
+      <select id="paymentMethod" required>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Card">Credit/Debit Card</option>
+        <option value="UPI">UPI</option>
+      </select>
+      <button onclick="confirmOrder()" class="mm-btn primary">✅ Confirm Order</button>
+
+    </form>
+  </main>
+
+  <script src="Web.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

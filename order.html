@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniMart – Orders</title>
+  <link rel="stylesheet" href="webstyle.css"/>
+</head>
+<body>
+  <nav class="mm-navbar">
+    <a href="web.html" class="brand">🛍️ MiniMart</a>
+    <div class="spacer"></div>
+    <a href="order.html">📦 Orders</a>
+    <a href="wishlist.html">❤️ Wishlist (<span id="wishlistCount">0</span>)</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    <span id="userSection"></span>
+  </nav>
+
+  <main class="mm-container">
+    <h1>📦 My Orders</h1>
+    <div id="orderList"></div>
+
+<label for="statusFilter"><strong>Filter by Status:</strong></label>
+<select id="statusFilter">
+  <option value="All">All</option>
+  <option value="Pending">Pending</option>
+  <option value="Shipped">Shipped</option>
+  <option value="Delivered">Delivered</option>
+</select>
+
+<div id="ordersList"></div>
+
+<script src="order.js"></script>
+
+  </main>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container"></div>
+
+  <script src="Web.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>
